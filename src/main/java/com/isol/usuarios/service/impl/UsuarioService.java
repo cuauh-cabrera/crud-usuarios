@@ -174,12 +174,7 @@ public class UsuarioService implements IUsuarioService {
                 throw new ResponseNotFound(UsuarioConstantes.NOT_FOUND_MSG);
             }else {
                 Usuario usuario = usuarioOptional.get();
-                UsuarioDTO usuarioDTO = new UsuarioDTO();
-                usuarioDTO.setId(usuario.getId());
-                usuarioDTO.setNombreUsuario(usuario.getNombreUsuario());
-                usuarioDTO.setApellidoPaterno(usuario.getApellidoPaterno());
-                usuarioDTO.setApellidoMaterno(usuario.getApellidoMaterno());
-                usuarioDTO.setEmail(usuario.getEmail());
+                UsuarioDTO usuarioDTO = mapperRead.map(usuario);
                 log.info(UsuarioConstantes.SUCCESS_LOG);
                 return usuarioDTO;
             }
