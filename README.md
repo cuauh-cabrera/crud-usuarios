@@ -26,7 +26,17 @@ Para la instalación del proyecto se necesita:
 *	Git
 * IDE (IntelliJ, Netbeans,Eclipse, VScode)
 
-Clona el proyecto mediante Maven para inicializar el servidor
+Clona el proyecto desde GitHub en tu carpeta local y despues instala el proyecto con Maven desde el IDE de tu eleccion
+
+```sh
+  $ cd yor-local-folder
+  
+  HTTPS:
+  $ git clone https://github.com/cuauh-cabrera/crud-usuarios.git
+  
+  SSH:
+  $ git clone git@github.com:cuauh-cabrera/crud-usuarios.git
+```
 
 	$ mvn clean install
 
