@@ -29,7 +29,7 @@ Para la instalación del proyecto se necesita:
 Clona el proyecto desde GitHub en tu carpeta local y despues instala el proyecto con Maven desde el IDE de tu eleccion
 
 ```sh
-  $ cd yor-local-folder
+  $ cd your-local-folder
   
   HTTPS:
   $ git clone https://github.com/cuauh-cabrera/crud-usuarios.git
